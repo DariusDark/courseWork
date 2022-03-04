@@ -1,294 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <!-- Дополнительные мета теги -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="robots" content="none">
-    <link rel="stylesheet" href="fonts/font awesome/css/all.min.css">
-    <link rel="stylesheet" href="fonts/Ubuntu/stylesheet.css">
-    <link rel="stylesheet" href="css/main.css">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="none" />
+    <link rel="stylesheet" href="fonts/font awesome/css/all.min.css" />
+    <link rel="stylesheet" href="fonts/Ubuntu/stylesheet.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Games</title>
-</head>
+    <!--Global site tag(gtag.js) - Google Analytics-->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L7RQW4C7BT"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<body>
+      gtag("config", "G-L7RQW4C7BT");
+    </script>
+  </head>
+
+  <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="header-top">
-                <div class="container">
-                    <div class="header-top__row">
-                        <div class="header-top__logo">
-                            <a class="header-top__logo-link" href="#"><img class="logo__img" src="img/header/logo.png" alt="Games World"></a>
-                        </div>
-                        <nav class="header-top__nav">
-                            <ul class="menu__list">
-                                <li class="menu__item"><a class="menu__link" href="../../../index.html">Home</a></li>
-                                <li class="menu__item">
-                                    <a class="menu__link link__dropdown" href="../../about/about/index.html">About</a>
-                                    <div class="menu__dropdown">
-                                        <ul class="dropdown__list">
-                                            <li class="dropdown__item"><a href="#" class="dropdown__link">History</a>
-                                            </li>
-                                            <li class="dropdown__item"><a href="#" class="dropdown__link">Team</a></li>
-                                            <li class="dropdown__item"><a href="#" class="dropdown__link">FAQ's</a></li>
-                                            <li class="dropdown__item"><a href="#" class="dropdown__link">Forum</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="menu__item"><a class="menu__link menu__active" href="./index.html">Games</a></li>
-                                <li class="menu__item"><a class="menu__link" href="../../news/news/index.html">News</a></li>
-                                <li class="menu__item"><a class="menu__link" href="../../contacts/contacts/index.html">Contacts</a></li>
-                            </ul>
-                        </nav>
-                        <div class="header-top__search-bar">
-                            <div class="search-bar__input">
-                                <input class="search-input" id="searchInput" type="text" placeholder="Search ...">
-                                <input class="search-button" id="searchButton" type="button">
-                            </div>
-                        </div>
-                        <div class="header-top__menu-burger">
-                            <div class="toggle" id="toggler"></div>
-                            <nav class="header-top__nav navbar-burger">
-                                <ul class="menu__list menu-burger">
-                                    <li class="menu__item"><a class="menu__link" href="../../../index.html">Home</a></li>
-                                    <li class="menu__item">
-                                        <a class="menu__link link__dropdown" href="../../about/about/index.html">About</a>
-                                        <div class="menu__dropdown">
-                                            <ul class="dropdown__list">
-                                                <li class="dropdown__item"><a href="#" class="dropdown__link">History</a></li>
-                                                <li class="dropdown__item"><a href="#" class="dropdown__link">Team</a></li>
-                                                <li class="dropdown__item"><a href="#" class="dropdown__link">FAQ's</a></li>
-                                                <li class="dropdown__item"><a href="#" class="dropdown__link">Forum</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="menu__item"><a class="menu__link menu__active" href="./index.html">Games</a></li>
-                                    <li class="menu__item"><a class="menu__link" href="../../news/news/index.html">News</a></li>
-                                    <li class="menu__item"><a class="menu__link" href="../../contacts/contacts/index.html">Contacts</a></li>
-                                </ul>
-                            </nav>
-                        </div>
+      <header class="header">
+        <div class="header-top">
+          <div class="container">
+            <div class="header-top__row">
+              <div class="header-top__logo">
+                <a class="header-top__logo-link" href="#"
+                  ><img
+                    class="logo__img"
+                    src="img/header/logo.png"
+                    alt="Games World"
+                /></a>
+              </div>
+              <nav class="header-top__nav">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a class="menu__link" href="../../../index.html">Home</a>
+                  </li>
+                  <li class="menu__item">
+                    <a
+                      class="menu__link link__dropdown"
+                      href="../../about/about/index.html"
+                      >About</a
+                    >
+                    <div class="menu__dropdown">
+                      <ul class="dropdown__list">
+                        <li class="dropdown__item">
+                          <a href="#" class="dropdown__link">History</a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="#" class="dropdown__link">Team</a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="#" class="dropdown__link">FAQ's</a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="#" class="dropdown__link">Forum</a>
+                        </li>
+                      </ul>
                     </div>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link menu__active" href="./index.html"
+                      >Games</a
+                    >
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="../../news/news/index.html"
+                      >News</a
+                    >
+                  </li>
+                  <li class="menu__item">
+                    <a
+                      class="menu__link"
+                      href="../../contacts/contacts/index.html"
+                      >Contacts</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <div class="header-top__search-bar">
+                <div class="search-bar__input">
+                  <input
+                    class="search-input"
+                    id="searchInput"
+                    type="text"
+                    placeholder="Search ..."
+                  />
+                  <input
+                    class="search-button"
+                    id="searchButton"
+                    type="button"
+                  />
                 </div>
+              </div>
+              <div class="header-top__menu-burger">
+                <div class="toggle" id="toggler"></div>
+                <nav class="header-top__nav navbar-burger">
+                  <ul class="menu__list menu-burger">
+                    <li class="menu__item">
+                      <a class="menu__link" href="../../../index.html">Home</a>
+                    </li>
+                    <li class="menu__item">
+                      <a
+                        class="menu__link link__dropdown"
+                        href="../../about/about/index.html"
+                        >About</a
+                      >
+                      <div class="menu__dropdown">
+                        <ul class="dropdown__list">
+                          <li class="dropdown__item">
+                            <a href="#" class="dropdown__link">History</a>
+                          </li>
+                          <li class="dropdown__item">
+                            <a href="#" class="dropdown__link">Team</a>
+                          </li>
+                          <li class="dropdown__item">
+                            <a href="#" class="dropdown__link">FAQ's</a>
+                          </li>
+                          <li class="dropdown__item">
+                            <a href="#" class="dropdown__link">Forum</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link menu__active" href="./index.html"
+                        >Games</a
+                      >
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link" href="../../news/news/index.html"
+                        >News</a
+                      >
+                    </li>
+                    <li class="menu__item">
+                      <a
+                        class="menu__link"
+                        href="../../contacts/contacts/index.html"
+                        >Contacts</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
-        </header>
-        <section class="games">
-            <div class="container">
-                <h1 class="games__title">Games</h1>
-                <div class="games__row" id="contentBody">
-                    <div class="games__body">
-                        <div class="games__card">
-                            <div class="games__img">
-                                <a class="games__img-link" href="#">
-                                    <img class="games__image" src="img/games/batman.jpg" alt="Batman">
-                                </a>
-                            </div>
-                            <h6 class="games__headline"><a class="games__headline-link" href="#">In hac habitasse</a></h6>
-                            <p class="games__explanation">Sed justo felis, lacinia at scelerisque a, semper et ante</p>
-                        </div>
-                    </div>
-                    <div class="games__body">
-                        <div class="games__card">
-                            <div class="games__img">
-                                <a class="games__img-link" href="#">
-                                    <img class="games__image" src="img/games/batman.jpg" alt="Batman">
-                                </a>
-                            </div>
-                            <h6 class="games__headline"><a class="games__headline-link" href="#">In hac habitasse</a></h6>
-                            <p class="games__explanation">Sed justo felis, lacinia at scelerisque a, semper et ante</p>
-                        </div>
-                    </div>
-                    <div class="games__body">
-                        <div class="games__card">
-                            <div class="games__img">
-                                <a class="games__img-link" href="#">
-                                    <img class="games__image" src="img/games/batman.jpg" alt="Batman">
-                                </a>
-                            </div>
-                            <h6 class="games__headline"><a class="games__headline-link" href="#">In hac habitasse</a></h6>
-                            <p class="games__explanation">Sed justo felis, lacinia at scelerisque a, semper et ante</p>
-                        </div>
-                    </div>
-                    <div class="games__body">
-                        <div class="games__card">
-                            <div class="games__img">
-                                <a class="games__img-link" href="#">
-                                    <img class="games__image" src="img/games/batman.jpg" alt="Batman">
-                                </a>
-                            </div>
-                            <h6 class="games__headline"><a class="games__headline-link" href="#">In hac habitasse</a></h6>
-                            <p class="games__explanation">Sed justo felis, lacinia at scelerisque a, semper et ante</p>
-                        </div>
-                    </div>
-                    <div class="games__body">
-                        <div class="games__card">
-                            <div class="games__img">
-                                <a class="games__img-link" href="#">
-                                    <img class="games__image" src="img/games/batman.jpg" alt="Batman">
-                                </a>
-                            </div>
-                            <h6 class="games__headline"><a class="games__headline-link" href="#">In hac habitasse</a></h6>
-                            <p class="games__explanation">Sed justo felis, lacinia at scelerisque a, semper et ante</p>
-                        </div>
-                    </div>
-                    <div class="games__body">
-                        <div class="games__card">
-                            <div class="games__img">
-                                <a class="games__img-link" href="#">
-                                    <img class="games__image" src="img/games/batman.jpg" alt="Batman">
-                                </a>
-                            </div>
-                            <h6 class="games__headline"><a class="games__headline-link" href="#">In hac habitasse</a></h6>
-                            <p class="games__explanation">Sed justo felis, lacinia at scelerisque a, semper et ante</p>
-                        </div>
-                    </div>
-                    <div class="games__body">
-                        <div class="games__card">
-                            <div class="games__img">
-                                <a class="games__img-link" href="#">
-                                    <img class="games__image" src="img/games/batman.jpg" alt="Batman">
-                                </a>
-                            </div>
-                            <h6 class="games__headline"><a class="games__headline-link" href="#">In hac habitasse</a></h6>
-                            <p class="games__explanation">Sed justo felis, lacinia at scelerisque a, semper et ante</p>
-                        </div>
-                    </div>
-                    <div class="games__body">
-                        <div class="games__card">
-                            <div class="games__img">
-                                <a class="games__img-link" href="#">
-                                    <img class="games__image" src="img/games/batman.jpg" alt="Batman">
-                                </a>
-                            </div>
-                            <h6 class="games__headline"><a class="games__headline-link" href="#">In hac habitasse</a></h6>
-                            <p class="games__explanation">Sed justo felis, lacinia at scelerisque a, semper et ante</p>
-                        </div>
-                    </div>
+          </div>
+        </div>
+      </header>
+      <section class="games">
+        <div class="container">
+          <h1 class="games__title">Games</h1>
+          <div class="games__row" id="contentBody">
+            <div class="games__body">
+              <div class="games__card">
+                <div class="games__img">
+                  <a class="games__img-link" href="#">
+                    <img
+                      class="games__image"
+                      src="img/games/batman.jpg"
+                      alt="Batman"
+                    />
+                  </a>
                 </div>
+                <h6 class="games__headline">
+                  <a class="games__headline-link" href="#">In hac habitasse</a>
+                </h6>
+                <p class="games__explanation">
+                  Sed justo felis, lacinia at scelerisque a, semper et ante
+                </p>
+              </div>
             </div>
-        </section>
-        <section class="follow">
-            <div class="container">
-                <div class="follow__row">
-                    <div class="follow__body">
-                        <h5 class="follow__title">Follow Us</h5>
-                    </div>
-                    <div class="follow__body">
-                        <a class="follow__link link_facebook" href="https://facebook.com"><i
-                                class="fab fa-facebook-f"></i></a>
-                    </div>
-                    <div class="follow__body">
-                        <a class="follow__link link_twitter" href="https://twitter.com"><i
-                                class="fab fa-twitter"></i></a>
-                    </div>
-                    <div class="follow__body">
-                        <a class="follow__link link__gmail" href="https://gmail.com"><i
-                                class="fab fa-google-plus-g"></i></a>
-                    </div>
-                    <div class="follow__body">
-                        <a class="follow__link link__youtube" href="https://youtube.com"><i
-                                class="fab fa-youtube"></i></a>
-                    </div>
+            <div class="games__body">
+              <div class="games__card">
+                <div class="games__img">
+                  <a class="games__img-link" href="#">
+                    <img
+                      class="games__image"
+                      src="img/games/batman.jpg"
+                      alt="Batman"
+                    />
+                  </a>
                 </div>
+                <h6 class="games__headline">
+                  <a class="games__headline-link" href="#">In hac habitasse</a>
+                </h6>
+                <p class="games__explanation">
+                  Sed justo felis, lacinia at scelerisque a, semper et ante
+                </p>
+              </div>
             </div>
-        </section>
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-top">
-                    <div class="footer__row">
-                        <div class="footer__body">
-                            <div class="footer__card">
-                                <h5 class="footer__card-title">About</h5>
-                                <div class="footer__card-lnk">
-                                    <a class="footer__card-link" href="#">Lorem ipsum dolor</a>
-                                </div>
-                                <div class="footer__card-lnk">
-                                    <a class="footer__card-link" href="#">Consectetur adipisicing</a>
-                                </div>
-                                <div class="footer__card-lnk">
-                                    <a class="footer__card-link" href="#">Eit sed do eiusmod</a>
-                                </div>
-                                <div class="footer__card-lnk">
-                                    <a class="footer__card-link" href="#">Tempor incididunt</a>
-                                </div>
-                                <div class="footer__card-lnk">
-                                    <a class="footer__card-link" href="#">Ut labore et dolore</a>
-                                </div>
-                                <div class="footer__card-lnk">
-                                    <a class="footer__card-link" href="#">Consectetur adipisicing</a>
-                                </div>
-                                <div class="footer__card-lnk">
-                                    <a class="footer__card-link" href="#">Elit sed do eiusmo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="footer__body">
-                            <div class="footer__card">
-                                <h5 class="footer__card-title">Reviews</h5>
-                                <div class="footer__card-lnk">
-                                    <a class="footer__card-link" href="#">Lorem ipsum dolor</a>
-                                </div>
-                                <div class="footer__card-lnk">
-                                    <a class="footer__card-link" href="#">Consectetur adipisicing</a>
-                                </div>
-                                <div class="footer__card-lnk">
-                                    <a class="footer__card-link" href="#">Eit sed do eiusmod</a>
-                                </div>
-                                <div class="footer__card-lnk">
-                                    <a class="footer__card-link" href="#">Tempor incididunt</a>
-                                </div>
-                                <div class="footer__card-lnk">
-                                    <a class="footer__card-link" href="#">Ut labore et dolore</a>
-                                </div>
-                                <div class="footer__card-lnk">
-                                    <a class="footer__card-link" href="#">Consectetur adipisicing</a>
-                                </div>
-                                <div class="footer__card-lnk">
-                                    <a class="footer__card-link" href="#">Elit sed do eiusmo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="footer__body">
-                            <div class="footer__card">
-                                <h5 class="footer__card-title">Partners</h5>
-                                <div class="footer__card-lnk">
-                                    <a class="footer__card-link" href="#">Lorem ipsum dolor</a>
-                                </div>
-                                <div class="footer__card-lnk">
-                                    <a class="footer__card-link" href="#">Consectetur adipisicing</a>
-                                </div>
-                                <div class="footer__card-lnk">
-                                    <a class="footer__card-link" href="#">Eit sed do eiusmod</a>
-                                </div>
-                                <div class="footer__card-lnk">
-                                    <a class="footer__card-link" href="#">Tempor incididunt</a>
-                                </div>
-                                <div class="footer__card-lnk">
-                                    <a class="footer__card-link" href="#">Ut labore et dolore</a>
-                                </div>
-                                <div class="footer__card-lnk">
-                                    <a class="footer__card-link" href="#">Consectetur adipisicing</a>
-                                </div>
-                                <div class="footer__card-lnk">
-                                    <a class="footer__card-link" href="#">Elit sed do eiusmo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer__ads"></div>
+            <div class="games__body">
+              <div class="games__card">
+                <div class="games__img">
+                  <a class="games__img-link" href="#">
+                    <img
+                      class="games__image"
+                      src="img/games/batman.jpg"
+                      alt="Batman"
+                    />
+                  </a>
                 </div>
+                <h6 class="games__headline">
+                  <a class="games__headline-link" href="#">In hac habitasse</a>
+                </h6>
+                <p class="games__explanation">
+                  Sed justo felis, lacinia at scelerisque a, semper et ante
+                </p>
+              </div>
             </div>
-            <div class="footer-bottom">
-                <div class="footer-bottom__description">
-                    <p class="footer-bottom__text">Games World © 2021. <a class="footer-bottom__link" href="#">Privacy
-                            Policy</a></p>
+            <div class="games__body">
+              <div class="games__card">
+                <div class="games__img">
+                  <a class="games__img-link" href="#">
+                    <img
+                      class="games__image"
+                      src="img/games/batman.jpg"
+                      alt="Batman"
+                    />
+                  </a>
                 </div>
+                <h6 class="games__headline">
+                  <a class="games__headline-link" href="#">In hac habitasse</a>
+                </h6>
+                <p class="games__explanation">
+                  Sed justo felis, lacinia at scelerisque a, semper et ante
+                </p>
+              </div>
             </div>
-        </footer>
+            <div class="games__body">
+              <div class="games__card">
+                <div class="games__img">
+                  <a class="games__img-link" href="#">
+                    <img
+                      class="games__image"
+                      src="img/games/batman.jpg"
+                      alt="Batman"
+                    />
+                  </a>
+                </div>
+                <h6 class="games__headline">
+                  <a class="games__headline-link" href="#">In hac habitasse</a>
+                </h6>
+                <p class="games__explanation">
+                  Sed justo felis, lacinia at scelerisque a, semper et ante
+                </p>
+              </div>
+            </div>
+            <div class="games__body">
+              <div class="games__card">
+                <div class="games__img">
+                  <a class="games__img-link" href="#">
+                    <img
+                      class="games__image"
+                      src="img/games/batman.jpg"
+                      alt="Batman"
+                    />
+                  </a>
+                </div>
+                <h6 class="games__headline">
+                  <a class="games__headline-link" href="#">In hac habitasse</a>
+                </h6>
+                <p class="games__explanation">
+                  Sed justo felis, lacinia at scelerisque a, semper et ante
+                </p>
+              </div>
+            </div>
+            <div class="games__body">
+              <div class="games__card">
+                <div class="games__img">
+                  <a class="games__img-link" href="#">
+                    <img
+                      class="games__image"
+                      src="img/games/batman.jpg"
+                      alt="Batman"
+                    />
+                  </a>
+                </div>
+                <h6 class="games__headline">
+                  <a class="games__headline-link" href="#">In hac habitasse</a>
+                </h6>
+                <p class="games__explanation">
+                  Sed justo felis, lacinia at scelerisque a, semper et ante
+                </p>
+              </div>
+            </div>
+            <div class="games__body">
+              <div class="games__card">
+                <div class="games__img">
+                  <a class="games__img-link" href="#">
+                    <img
+                      class="games__image"
+                      src="img/games/batman.jpg"
+                      alt="Batman"
+                    />
+                  </a>
+                </div>
+                <h6 class="games__headline">
+                  <a class="games__headline-link" href="#">In hac habitasse</a>
+                </h6>
+                <p class="games__explanation">
+                  Sed justo felis, lacinia at scelerisque a, semper et ante
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="follow">
+        <div class="container">
+          <div class="follow__row">
+            <div class="follow__body">
+              <h5 class="follow__title">Follow Us</h5>
+            </div>
+            <div class="follow__body">
+              <a class="follow__link link_facebook" href="https://facebook.com"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </div>
+            <div class="follow__body">
+              <a class="follow__link link_twitter" href="https://twitter.com"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+            <div class="follow__body">
+              <a class="follow__link link__gmail" href="https://gmail.com"
+                ><i class="fab fa-google-plus-g"></i
+              ></a>
+            </div>
+            <div class="follow__body">
+              <a class="follow__link link__youtube" href="https://youtube.com"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer__row">
+              <div class="footer__body">
+                <div class="footer__card">
+                  <h5 class="footer__card-title">About</h5>
+                  <div class="footer__card-lnk">
+                    <a class="footer__card-link" href="#">Lorem ipsum dolor</a>
+                  </div>
+                  <div class="footer__card-lnk">
+                    <a class="footer__card-link" href="#"
+                      >Consectetur adipisicing</a
+                    >
+                  </div>
+                  <div class="footer__card-lnk">
+                    <a class="footer__card-link" href="#">Eit sed do eiusmod</a>
+                  </div>
+                  <div class="footer__card-lnk">
+                    <a class="footer__card-link" href="#">Tempor incididunt</a>
+                  </div>
+                  <div class="footer__card-lnk">
+                    <a class="footer__card-link" href="#"
+                      >Ut labore et dolore</a
+                    >
+                  </div>
+                  <div class="footer__card-lnk">
+                    <a class="footer__card-link" href="#"
+                      >Consectetur adipisicing</a
+                    >
+                  </div>
+                  <div class="footer__card-lnk">
+                    <a class="footer__card-link" href="#">Elit sed do eiusmo</a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__body">
+                <div class="footer__card">
+                  <h5 class="footer__card-title">Reviews</h5>
+                  <div class="footer__card-lnk">
+                    <a class="footer__card-link" href="#">Lorem ipsum dolor</a>
+                  </div>
+                  <div class="footer__card-lnk">
+                    <a class="footer__card-link" href="#"
+                      >Consectetur adipisicing</a
+                    >
+                  </div>
+                  <div class="footer__card-lnk">
+                    <a class="footer__card-link" href="#">Eit sed do eiusmod</a>
+                  </div>
+                  <div class="footer__card-lnk">
+                    <a class="footer__card-link" href="#">Tempor incididunt</a>
+                  </div>
+                  <div class="footer__card-lnk">
+                    <a class="footer__card-link" href="#"
+                      >Ut labore et dolore</a
+                    >
+                  </div>
+                  <div class="footer__card-lnk">
+                    <a class="footer__card-link" href="#"
+                      >Consectetur adipisicing</a
+                    >
+                  </div>
+                  <div class="footer__card-lnk">
+                    <a class="footer__card-link" href="#">Elit sed do eiusmo</a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__body">
+                <div class="footer__card">
+                  <h5 class="footer__card-title">Partners</h5>
+                  <div class="footer__card-lnk">
+                    <a class="footer__card-link" href="#">Lorem ipsum dolor</a>
+                  </div>
+                  <div class="footer__card-lnk">
+                    <a class="footer__card-link" href="#"
+                      >Consectetur adipisicing</a
+                    >
+                  </div>
+                  <div class="footer__card-lnk">
+                    <a class="footer__card-link" href="#">Eit sed do eiusmod</a>
+                  </div>
+                  <div class="footer__card-lnk">
+                    <a class="footer__card-link" href="#">Tempor incididunt</a>
+                  </div>
+                  <div class="footer__card-lnk">
+                    <a class="footer__card-link" href="#"
+                      >Ut labore et dolore</a
+                    >
+                  </div>
+                  <div class="footer__card-lnk">
+                    <a class="footer__card-link" href="#"
+                      >Consectetur adipisicing</a
+                    >
+                  </div>
+                  <div class="footer__card-lnk">
+                    <a class="footer__card-link" href="#">Elit sed do eiusmo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__ads"></div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom__description">
+            <p class="footer-bottom__text">
+              Games World © 2021.
+              <a class="footer-bottom__link" href="#">Privacy Policy</a>
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
